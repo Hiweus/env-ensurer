@@ -1,0 +1,15 @@
+{
+  "name": "@hiweus/env-ensurer",
+  "version": "0.0.0",
+  "main": "index.js",
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "javascript",
+    "environment",
+    "configuration"
+  ],
+  "author": "hiweus",
+  "license": "ISC",
+  "description": "Lib to parse and interpret environment.d.ts and validate on runtime"
+}

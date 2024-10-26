@@ -300,11 +300,12 @@ function interpreter(commandNode) {
   }
 }
 
-function cj(obj) {
-  console.log(JSON.stringify(obj, null, 2))
-}
 
-function main(filename) {
+/**
+ * Parse environment.d.ts and check the variables
+ * @param {String} filename 
+ */
+function parserEnvironment(filename) {
   const data = String(fs.readFileSync(filename))
   const tokens = tokenize(data)
   const commandNode = parser(tokens)
@@ -324,4 +325,7 @@ function main(filename) {
   }
 }
 
-main('./1.d.ts')
+
+module.exports = {
+  parserEnvironment,
+}
