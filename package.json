@@ -1,7 +1,12 @@
 {
   "name": "@hiweus/env-ensurer",
-  "version": "0.1.0",
+  "author": "hiweus",
+  "description": "Lib to parse and interpret environment.d.ts and validate on runtime",
+  "version": "0.1.1",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "typescript",
     "nodejs",
@@ -9,7 +14,9 @@
     "environment",
     "configuration"
   ],
-  "author": "hiweus",
   "license": "ISC",
-  "description": "Lib to parse and interpret environment.d.ts and validate on runtime"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiweus/env-ensurer.git"
+  }
 }
