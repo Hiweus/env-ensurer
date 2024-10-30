@@ -16,6 +16,12 @@ declare global {
       SOME_HOST?: `${'http' | 'https'}://${string}.com.br`
     }
   }
+
+  namespace Express {
+    interface Request {
+      user: Record<string, unknown>
+    }
+  }
 }
 
 export { }
